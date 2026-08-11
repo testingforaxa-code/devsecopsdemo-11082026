@@ -1,0 +1,20 @@
+name: hello-world
+on: push
+jobs:
+  devsecops-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scret Scanning
+        run: echo "Secret Scanning"
+      - name: SCA
+        run: echo "SCA"
+      - name: SAST
+        run: echo "SAST"
+      - name: IaC Sacanning
+        run: echo "IaC Scanning" 
+      - name: Container scanning
+        run: echo "Container Scanning"
+      - name: DAST
+        run: echo "DAST"
+      - name: Infra Scanning
+        run: echo "INfra Scanning"
